@@ -14,7 +14,7 @@ class UserController extends Controller
     public $successStatus = 200;
 
     /**
-     * login Api
+     * login api
      *
      * @return \Illuminate\Http\Response
      */
@@ -29,6 +29,12 @@ class UserController extends Controller
         }
     }
 
+    /**
+     * Logout api
+     *
+     * @param Request $request
+     * @return type
+     */
     public function logout(Request $request)
     {
         $value = $request->bearerToken();
@@ -39,7 +45,7 @@ class UserController extends Controller
     }
 
     /**
-     * Register Api
+     * Register api
      *
      * @return \Illuminate\Http\Response
      */
@@ -63,7 +69,7 @@ class UserController extends Controller
     }
 
     /**
-     * details Api
+     * details api
      *
      * @return \Illuminate\Http\Response
      */
